@@ -1,0 +1,28 @@
+{% extends "layout_admin.html" %}
+{% block content %}
+    <div id="container" class="text-center">
+        <br/>
+        <h1> END GAME ANSWERS </h1>
+        <br/>
+        <form action="" method="POST">
+                <table align="center" class="table">
+                    <tr><th>Guest_id_f</th><th>Guest_name</th><th>TIMESTAMP</th><th>Answer</th></tr>
+
+                    <tr><td></td><td></td><td></td></td><td></td><td></td><td></td></tr> <!-- empty line -->
+
+
+                    {% if rows !="EMPTY" %}
+                        {% for row in rows %}
+                            <tr>
+                                <td>{{ row[0] }}</td>
+                                <td>{{ row[1] }}</td>
+                                <td>{{ row[2] }}</td>
+                                <td>{{ row[3] }}</td>
+                                <td><input type="submit" name="action" value="Delete record {{ row[0] }}"/></td>
+                            </tr>
+                        {% endfor %}
+                    {% endif %}
+                </table>
+            </form>
+    </div>
+{% endblock %}
