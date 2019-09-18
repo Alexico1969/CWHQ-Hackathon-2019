@@ -5,9 +5,30 @@ body{
 
 /* IM Fell English font */
 h1 { font-family: "IM Fell English"; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 21.6px; } h3 { font-family: "IM Fell English"; font-size: 17px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 23px; } p { font-family: "IM Fell English"; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px; } blockquote { font-family: "IM Fell English"; font-size: 17px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px; } pre { font-family: "IM Fell English"; font-size: 11px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px; }
+h2 { font-family: "IM Fell English"; font-size: 22px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 21.6px; } h3 { font-family: "IM Fell English"; font-size: 17px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 23px; } p { font-family: "IM Fell English"; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px; } blockquote { font-family: "IM Fell English"; font-size: 17px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px; } pre { font-family: "IM Fell English"; font-size: 11px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px; }
+
+.story{
+  /*background-image: url("perkament.jpg");*/
+  background: url('perkament.jpg'); 
+  background-repeat: no-repeat;
+  background-size: 560px;
+}
+
+.padme1{
+  padding: 30px 30px 30px 30px;
+}
+
+.padme2{
+  padding: 5px 5px 5px 5px;
+}
 
 .pic_bottom{
     vertical-align: bottom;
+}
+
+.center{
+    align: center;
+    text-align: center;
 }
 
 .navtext{
@@ -16,6 +37,58 @@ h1 { font-family: "IM Fell English"; font-size: 18px; font-style: normal; font-v
     padding-left: 10px;
 }
 
+.spaceme.input{
+  padding-top:5px;
+  padding-bottom:5px;
+}
+
+.endgame{
+  background-color:sandybrown;
+  border: 7px solid #875c12;
+  border-radius: 15px;
+  padding : 15px 15px 15px 15px;
+}
+
+.code{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 100%;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 5px;
+}
+
+.assignment{
+  font-family: Papyrus;
+  font-size: 120%;
+  line-height: 1.6;
+}
+
+#badge{
+  background-image: url('shield-red-150.png');
+  display: inline-block;
+  width: 150px;
+  height: 179px;
+  color: white;
+  font-size: 140%;
+}
+
+#dragon1{
+  background-image: url('dragon_end_1.png');
+  display: inline-block;
+  width: 150px;
+  height: 179px;
+  color: white;
+  font-size: 140%;
+}
+
+#dragon2{
+  background-image: url('dragon_end_2.png');
+  display: inline-block;
+  width: 150px;
+  height: 179px;
+  color: white;
+  font-size: 140%;
+}
 
 /* Navbar stuff (to make the menu items appear left-center-right)
 
@@ -24,6 +97,7 @@ h1 { font-family: "IM Fell English"; font-size: 18px; font-style: normal; font-v
     position: relative;
     background-color: #008255;
     overflow: hidden;
+    border-radius: 15px;
   }
   
   /* Style the links inside the navigation bar */
@@ -49,7 +123,7 @@ h1 { font-family: "IM Fell English"; font-size: 18px; font-style: normal; font-v
   }
   
   /* Centered section inside the top navigation */
-  .topnav-centered a {
+  .topnav-centered {
     float: none;
     position: absolute;
     top: 50%;
